@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        section{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section>article{
+            height: 200px;
+            width: 200px;
+            border: 2px solid white;
+
+            animation-name: chrColor;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes chrColor{
+            0%{background-color: red; transform: rotate3d(0,0,1,0deg);}
+            25%{background-color: green;transform: rotate3d(0,0,1,60deg);}
+            50%{background-color: blue;;transform: rotate3d(0,0,1,120deg);}
+            75%{background-color: yellow;transform: rotate3d(0,0,1,240deg);}
+            100%{background-image: url(./download.jpeg);transform: rotate3d(0,0,1,360deg);}
+
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            
+
+        </article>
+    </section>
+    
+</body>
+</html>
